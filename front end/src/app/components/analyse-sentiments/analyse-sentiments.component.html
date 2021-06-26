@@ -1,0 +1,28 @@
+<div class="container">
+  <br>
+    <div class="card">
+      <div class="card-header">
+
+    <h3>Analyse des Sentiments</h3>
+      </div>
+      <div class="card-body">
+         <form #sentimentsForm="ngForm" (ngSubmit)="onSubmit(sentimentsForm.value)">
+
+      <div class="form-group row">
+        <textarea class="form-control" rows="9" id="comment" placeholder="Tapez la phrase à analyser ici" name="comment" ngModel></textarea>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-lg btn-outline-primary" >Vérifier</button>
+          <button type="button" class="btn btn-lg btn-outline-danger ml-4" (click)="clear(sentimentsForm)">Effacer</button>
+        </div>
+      </div>
+
+
+    </form>
+      </div>
+    </div>
+
+  </div>
+
+
